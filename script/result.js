@@ -1,6 +1,9 @@
 window.onload = function() {
     // Retrieve result details from localStorage
     var participantName = localStorage.getItem('userName');
+    if (!participantName) {
+        participantName = "Participant"; // Assign default name
+    }
     var totalTimeTaken = localStorage.getItem('totalTimeTaken');
     var totalQuestions = localStorage.getItem('totalQuestions');
     var attempts = localStorage.getItem('attempts');
@@ -12,13 +15,13 @@ window.onload = function() {
     // Display result details
     var resultDetails = document.getElementById('resultDetails');
     resultDetails.innerHTML = ` 
-        <p>Name of the participant: ${participantName}</p>
-        <p>Total time taken: ${totalTimeTaken} seconds</p>
-        <p>Total Questions: ${totalQuestions}</p>
-        <p>Attempt: ${attempts}</p>
-        <p>No of Correct Questions: ${correctQuestions}</p>
-        <p>No of Wrong Questions: ${wrongQuestions}</p>
-        <p>Score in percentage: ${scorePercentage}%</p>
+        <p> <strong>${participantName} </strong> Your result is:</p>
+        <p>Total time taken: <strong>${totalTimeTaken} seconds </strong></p>
+        <p>Total Questions: <strong>${totalQuestions} </strong></p>
+        <p>Attempt: <strong> ${attempts} </strong></p>
+        <p> Correct : <strong> ${correctQuestions} </strong></p>
+        <p>Wrong: <strong> ${wrongQuestions} </strong></p>
+        <p>Percentage:<strong> ${scorePercentage}% </strong></p>
     `;
 
     // Button event listeners
