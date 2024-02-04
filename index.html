@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div>
+      <section class="section_container">
+        <img width="200px" src="../quiz-logo.png" />
+        <h2 class="hello_user_heading">Hello User !</h2>
+        <h3 class="enter_name_heading">
+          Enter Your Name to continue this Quiz.
+        </h3>
+        <div class="input_container">
+          <input id="userNameInput" type="text" placeholder="Enter Your Name..." />
+          <button id="enterButton" class="enter_button">Enter</button>
+          <h3>You will have 15 seconds to answer each question</h3>
+        </div>
+      </section>
+      <h1 class="select_category">Select Category</h1>
+      <section class="category_section" id="categorySection">
+        <div class="category_items_container">
+          <div class="category_items" onclick="redirectToQuestions('Pipes and Cisterns')">Pipes and Cisterns</div>
+          <div class="category_items" onclick="redirectToQuestions('Probability')">Probability</div>
+          <div class="category_items" onclick="redirectToQuestions('Problems on age')">Problems on age</div>
+          <div class="category_items" onclick="redirectToQuestions('Profit and loss')">Profit and loss</div>
+        </div>
+      </section>
+    </div>
+    <script src="./script/script.js"></script>
+  </body>
+</html>

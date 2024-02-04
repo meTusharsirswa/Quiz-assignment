@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Result</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      border: 1px solid black;
+      width: 30%;
+      padding-bottom: 25px;
+      margin-top: 8rem;
+    }
+    button{
+      padding: 8px;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Quiz Result</h1>
+      <div id="usernameDisplay"></div>
+      <div id="resultDetails">
+        <!-- Display result details here -->
+      </div>
+      <div class="buttons">
+        <button id="startAgainButton">Start Again</button>
+        <button id="goToHomeButton">Go to Home</button>
+      </div>
+    </div>
+
+    <script src="./script/result.js"></script>
+  </body>
+</html>

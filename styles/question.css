@@ -1,0 +1,109 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.category {
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.timer, .score {
+    border-radius: 50%;
+    background-color: lightgray;
+    padding: 10px;
+    object-fit: contain;
+    width: 55px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.content {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#questionBox {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.questionInfo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.currentQuestion {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.questionText {
+    margin-bottom: 20px;
+}
+#questionText{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#nextQuestionButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#nextQuestionButton:hover {
+    background-color: #0056b3;
+}
+#optionsContainer{
+    display: grid;
+    grid-template-columns: 30% 30%;
+    grid-column-gap: 20%;
+  justify-content: center;
+  align-items: center;
+}
+.option {
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 100%;
+    text-align: center;
+}
+.option:hover {
+    background-color: #e0e0e0;
+}
